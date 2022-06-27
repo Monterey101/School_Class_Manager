@@ -51,7 +51,7 @@ def Update():
     if Confirm == "1":
         #Setting new heading
         file = open(fileName, 'w')
-        file.write("Gowan Brae Public School Class and Student Information Sheet - KOCIC \n")
+        file.write("Coding School Class and Student Information Sheet \n")
         file.write(" \n")
         file.close()
         #Adding each class to file
@@ -182,7 +182,7 @@ def populate_array(classToPopulate):
                 print("You have not entered a valid number between 1 - 100")
         #What to do if entered score != int
         except:
-            raise TypeError ("You can only enter intigers")
+            raise TypeError ("You can only enter integers")
         print()
 
     return classToPopulate
