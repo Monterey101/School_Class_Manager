@@ -434,29 +434,29 @@ def rankBands(Class):
         for student in Class:
             #Adding to counter based on the band
             if student.band == "A":
-                number_achieved_A = number_achieved_A + 1
+                number_achieved_A += 1
             elif student.band == "B":
-                number_achieved_B = number_achieved_B + 1
+                number_achieved_B += 1
             elif student.band == "C":
-                number_achieved_C = number_achieved_C + 1
+                number_achieved_C += 1
             elif student.band == "D":
-                number_achieved_D = number_achieved_D + 1
+                number_achieved_D += 1
             elif student.band == "E":
-                number_achieved_E = number_achieved_E + 1
+                number_achieved_E += 1
             elif student.band == "F":
-                number_achieved_F = number_achieved_F + 1
+                number_achieved_F += 1
     else:
         pass
     
     #Calculating the percentage each student achieving a mark based on previous counters
     total = number_achieved_A + number_achieved_B + number_achieved_C + number_achieved_D + number_achieved_E + number_achieved_F
     if total != 0:
-        percent_achieved_A = number_achieved_A / total * 100
-        percent_achieved_B = number_achieved_B / total * 100
-        percent_achieved_C = number_achieved_C / total * 100
-        percent_achieved_D = number_achieved_D / total * 100
-        percent_achieved_E = number_achieved_E / total * 100
-        percent_achieved_F = number_achieved_F / total * 100
+        percent_achieved_A /= (total * 100)
+        percent_achieved_B /= (total * 100)
+        percent_achieved_C /= (total * 100)
+        percent_achieved_D /= (total * 100)
+        percent_achieved_E /= (total * 100)
+        percent_achieved_F /= (total * 100)
 
         #Printing each student with their score and calculated band
         for student in Class:
